@@ -1,0 +1,12 @@
+{
+    "name": "secret-santa",
+    "version": "1.0.0",
+    "description": "A simple secret santa bot",
+    "main": "bot.js",
+    "author": "Gonzalo Ortiz",
+    "dependencies": {
+        "discord.io": "^2.5.3",
+        "discord.js": "^11.4.2",
+        "winston": "^3.1.0"
+    }
+}
