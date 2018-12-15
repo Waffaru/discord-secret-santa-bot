@@ -30,9 +30,8 @@ client.on('message', msg => {
               if(user.tag != santas2[santaId]) {
                 let target = client.users.find(user => user.tag === santas2[santaId]);
                 santas2.splice(santaId, 1)
-
                 console.log(`Ho ho ho! ${user.tag} You're receiving this message because you took part in the secret santa! You are secret santa for ${target.tag}, Happy holidays!`);
-                //user.send(`Ho ho ho, ${user.tag}! You're receiving this message because you took part in the secret santa! You are secret santa for ${target.tag}, Happy holidays!`)
+                user.send(`Ho ho ho, ${user.tag}! You're receiving this message because you took part in the secret santa! You are secret santa for ${target.tag}, Happy holidays!`)
                 console.log(santas2.length);
                 same = false;
               } else {
